@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de desenvolvimento web. Projetos, habilidades, formação e contato.">
+  <title>Meu Portfólio | Maria Paula</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Conteúdo</a>
+
+  <div class="accessibility-bar" aria-label="Opções de acessibilidade">
+    <div class="container accessibility-inner">
+      <strong class="accessibility-title"><span aria-hidden="true">◉</span> Acessibilidade</strong>
+      <div class="font-controls" role="group" aria-label="Tamanho do texto">
+        <button type="button" id="decreaseFont" aria-label="Diminuir tamanho da letra">A−</button>
+        <button type="button" id="resetFont" aria-label="Restaurar tamanho padrão">A</button>
+        <button type="button" id="increaseFont" aria-label="Aumentar tamanho da letra">A+</button>
+      </div>
+      <div class="theme-controls" role="group" aria-label="Tema do site">
+        <button type="button" id="lightTheme"><span aria-hidden="true">☀</span> Tema claro</button>
+        <button type="button" id="darkTheme"><span aria-hidden="true">☾</span> Tema escuro</button>
+        <button type="button" id="contrastTheme"><span aria-hidden="true">◐</span> Alto contraste</button>
+      </div>
+      <span id="accessibilityStatus" class="sr-only" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Meu Portfólio, início"><span class="brand-icon" aria-hidden="true">&lt;/&gt;</span> Meu Portfólio</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu de navegação">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">PORTFÓLIO PESSOAL</p>
+          <p class="intro">Olá, eu sou</p>
+          <h1>Maria Paula <span>.</span></h1>
+          <h2>Desenvolvedora Web</h2>
+          <p class="hero-description">Crio soluções digitais funcionais, acessíveis e responsivas. Estou sempre aprendendo e transformando ideias em projetos.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Ver meus projetos</a>
+            <a class="button button-outline" href="#contato">Fale comigo</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração abstrata de desenvolvimento web">
+          <div class="art-circle"></div>
+          <div class="profile-card">
+            <div class="avatar" aria-hidden="true">SN</div>
+            <div class="code-window">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <p><span class="code-pink">const</span> pessoa = {</p>
+              <p class="code-indent">criatividade: <span class="code-yellow">true</span>,</p>
+              <p class="code-indent">aprendizado: <span class="code-yellow">"contínuo"</span></p>
+              <p>};</p>
+            </div>
+            <span class="art-tag tag-one">HTML · CSS</span>
+            <span class="art-tag tag-two">Acessibilidade</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container about-skills">
+      <article id="sobre" class="about-section">
+        <p class="eyebrow">QUEM SOU</p>
+        <h2 class="section-title"><span aria-hidden="true">✦</span> Sobre mim</h2>
+        <p>Sou estudante e profissional em desenvolvimento web, interessado(a) em tecnologia, criatividade e experiência do usuário.</p>
+        <p>Gosto de aprender novas ferramentas, resolver problemas e criar interfaces que funcionem bem para diferentes pessoas e dispositivos.</p>
+        <p class="edit-hint">Personalize este texto com sua história, seus interesses e seus objetivos profissionais.</p>
+      </article>
+      <article id="habilidades" class="skills-section">
+        <p class="eyebrow">O QUE ESTOU APRENDENDO</p>
+        <h2 class="section-title"><span aria-hidden="true">⌘</span> Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card"><span class="skill-symbol html-symbol" aria-hidden="true">5</span><strong>HTML</strong><small>Estrutura</small></div>
+          <div class="skill-card"><span class="skill-symbol css-symbol" aria-hidden="true">3</span><strong>CSS</strong><small>Estilos e layout</small></div>
+          <div class="skill-card"><span class="skill-symbol js-symbol" aria-hidden="true">JS</span><strong>JavaScript</strong><small>Interatividade</small></div>
+          <div class="skill-card"><span class="skill-symbol git-symbol" aria-hidden="true">⌘</span><strong>Git e GitHub</strong><small>Versionamento</small></div>
+        </div>
+        <p class="edit-hint">Altere as habilidades conforme seus conhecimentos reais. Não indique domínio de ferramentas que ainda está aprendendo.</p>
+      </article>
+    </section>
+
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <p class="eyebrow">O QUE JÁ FIZ</p>
+        <h2 class="section-title"><span aria-hidden="true">▣</span> Projetos em destaque</h2>
+        <p class="section-lead">Substitua os exemplos pelos seus projetos e adicione links reais para demonstrações e repositórios.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual visual-one" aria-hidden="true"><span>WEB</span><div class="mini-browser"><i></i><i></i><i></i><b></b><b></b></div></div>
+            <div class="project-content"><p class="project-type">PROJETO 01</p><h3>Site institucional</h3><p>Website responsivo para apresentar uma empresa, serviço ou iniciativa.</p><div class="tags"><span>HTML</span><span>CSS</span></div><a class="text-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-two" aria-hidden="true"><span>✓</span><div class="task-lines"><i></i><i></i><i></i></div></div>
+            <div class="project-content"><p class="project-type">PROJETO 02</p><h3>Lista de tarefas</h3><p>Aplicação para organizar atividades e praticar lógica e interação.</p><div class="tags"><span>JavaScript</span><span>CSS</span></div><a class="text-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-three" aria-hidden="true"><span>✧</span><div class="gallery-shapes"><i></i><i></i><i></i></div></div>
+            <div class="project-content"><p class="project-type">PROJETO 03</p><h3>Galeria de imagens</h3><p>Galeria responsiva com organização visual e navegação simples.</p><div class="tags"><span>HTML</span><span>CSS</span></div><a class="text-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container formation-contact">
+      <article id="formacao">
+        <p class="eyebrow">MINHA JORNADA</p>
+        <h2 class="section-title"><span aria-hidden="true">◇</span> Formação</h2>
+        <div class="timeline-card">
+          <span class="timeline-icon" aria-hidden="true">✦</span>
+          <div><h3>Seu curso ou formação</h3><p>Nome da instituição · Ano de início – conclusão prevista</p><p class="muted">Inclua cursos, certificações e experiências relevantes.</p></div>
+        </div>
+      </article>
+      <article id="contato">
+        <p class="eyebrow">VAMOS CONVERSAR</p>
+        <h2 class="section-title"><span aria-hidden="true">✉</span> Contato</h2>
+        <p>Quer conversar sobre um projeto, uma oportunidade ou tecnologia? Entre em contato pelos canais abaixo.</p>
+        <div class="contact-links">
+          <!-- Troque os exemplos pelos seus contatos reais antes de publicar. -->
+          <a href="mailto:seu.email@exemplo.com"><span aria-hidden="true">✉</span> seu.email@exemplo.com</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">in</span> LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌘</span> GitHub</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="currentYear"></span> Seu Nome. Todos os direitos reservados.</p>
+      <p>Feito com HTML, CSS, JavaScript e cuidado com a acessibilidade.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
